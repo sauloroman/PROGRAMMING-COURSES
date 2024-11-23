@@ -1,0 +1,162 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #343a40;
+  --color-blue: #0071b7;
+  --color-orange: #ff4f1e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 720px ) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.container {
+  width: 120rem;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
+.heading-section {
+  border-bottom: 1px solid currentColor;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* ############################# */
+/* HEADER */
+/* ############################# */
+
+.header {
+  padding: 4rem 0;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.header__link:link,
+.header__link:visited {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border .4s ease;
+}
+
+.header__link:hover,
+.header__link:visited {
+  cursor: pointer;
+  border-color: currentColor;
+}
+
+.u-padding-y-medium {
+  padding: 4rem 0;
+}
+
+.section {
+  background-color: var(--color-white);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  color: var(--color-black);
+}
+
+/* ###################################### */
+/* SELECTOR DE ETIQUETA */
+/* ###################################### */
+
+/* p {
+  color: red;
+  font-size: 2rem;
+} */
+
+/* ###################################### */
+/* SELECTOR DE CLASE */
+/* ###################################### */
+
+/* .first-paragraph {
+  background-color: red;
+  color: #fff;
+} */
+
+
+/* ###################################### */
+/* SELECTOR DE 2 CLASES */
+/* ###################################### */
+
+/* .text {
+  font-weight: bold;
+}
+
+.text.blue {
+  color: blue;
+}
+
+.text.blue.upper {
+  text-transform: uppercase;
+} */
+
+/* ###################################### */
+/* SELECTOR DE CLASES ANIDADAS */
+/* ###################################### */
+
+/* .selector .second-text {
+  font-weight: 900;
+} */
+
+/* ###################################### */
+/* SELECTOR DE ID */
+/* ###################################### */
+
+/* #third-text.text {
+  font-weight: bold;
+  color: red;
+} */
+
+/* ###################################### */
+/* SELECTOR DE ETIQUETA Y CLASE */
+/* ###################################### */
+
+/* div.sale {
+  background-color: blue;
+  color: #fff;
+} */
+
+/* ###################################### */
+/* SELECTOR DE 2 ELEMENTOS */
+/* ###################################### */
+
+/* .section-p, .sale {
+  background-color: blue;
+  color: #fff;
+}  */
