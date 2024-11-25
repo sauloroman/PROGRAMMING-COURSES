@@ -1,0 +1,202 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #343a40;
+  --color-blue: #0071b7;
+  --color-orange: #ff4f1e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.container {
+  width: 120rem;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
+.heading-section {
+  border-bottom: 1px solid currentColor;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.u-padding-y-medium {
+  padding-top: 3.2rem;
+}
+
+.section {
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box {
+  background-color: orangered;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid currentColor;
+}
+
+/* ############################# */
+/* HEADER */
+/* ############################# */
+
+.header {
+  padding: 4rem 0;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.header__link:link,
+.header__link:visited {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border .4s ease;
+}
+
+.header__link:hover,
+.header__link:visited {
+  cursor: pointer;
+  border-color: currentColor;
+}
+
+/* ############################# */
+/* DISPLAY FLEX */
+/* ############################# */
+
+.d-flex {
+  display: flex;
+}
+
+/* ############################# */
+/* FLEX DIRECTION */
+/* ############################# */
+
+.d-flex-2 {
+  display: flex;
+  flex-direction: row; /* default */
+  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+}
+
+/* ############################# */
+/* JUSTIFY CONTENT ROW   */
+/* ############################# */
+
+.d-flex-3 {
+  display: flex;
+  justify-content: flex-start; /* start default */
+  justify-content: center;
+  justify-content: flex-end; /* end */
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+/* ############################# */
+/* JUSTIFY CONTENT COLUMN   */
+/* ############################# */
+
+.d-flex-4 {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* start default */
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  justify-content: center;
+  justify-content: flex-end;
+}
+
+/* ############################# */
+/* ALIGN ITEMS ROW   */
+/* ############################# */
+
+.d-flex-5 {
+  height: 600px;
+  display: flex;
+  align-items: stretch; /* default */
+  align-items: center;
+  align-items: flex-end;
+  align-items: flex-start;
+}
+
+/* ############################# */
+/* ALIGN ITEMS COLUMN   */
+/* ############################# */
+
+.d-flex-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* default */
+  align-items: center;
+  align-items: start;
+  align-items: end;
+}
+
+/* ############################# */
+/* ALIGN ITEMS y JUSTIFY CONTENT   */
+/* ############################# */
+
+.d-flex-7 {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-items: end;
+}
+
+/* ############################# */
+/* FLEX BASIS */
+/* ############################# */
+
+.d-flex-8 {
+  display: flex;
+}
+
+/* .d-flex-8 .box {
+  flex-basis: 20rem;
+}
+
+.d-flex-8 .box:nth-child(1) {
+  flex-basis: 40rem;
+} */
+
+.d-flex-8 .box {
+  flex-basis: calc( 100% / 3 );
+}
