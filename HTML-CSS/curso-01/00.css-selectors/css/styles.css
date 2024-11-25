@@ -160,3 +160,28 @@ body {
   background-color: blue;
   color: #fff;
 }  */
+
+/* ###################################### */
+/* PRIMER NIVEL DE HIJOS */
+/* ###################################### */
+
+/* .admin > div {
+  padding: 1rem;
+  border: 2px solid red;
+} */
+
+/* ###################################### */
+/* PRIMER ELEMENTO DESPUES */
+/* ###################################### */
+
+/* .admin > div + p {
+  border: 1px solid red;
+} */
+
+/* ###################################### */
+/* TODOS LOS ELEMENTO DESPUES */
+/* ###################################### */
+
+.admin > div ~ p {
+  border: 1px solid blue;
+}
